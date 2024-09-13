@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class PlusOne {
     public static int[] plusOne(int[] digits) 
