@@ -15,7 +15,7 @@ class Conones{
         }
         Conones obj = new Conones();
         System.out.println(obj.check(nums));
-
+        sc.close();
         
 
     }
