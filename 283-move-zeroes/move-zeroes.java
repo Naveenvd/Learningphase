@@ -6,10 +6,11 @@ class Solution {
         {
             if(nums[i]!=0)
             {
-               int temp=nums[i];
-               nums[i]=nums[k];
-               nums[k]=temp;
-               k++;
+                int temp=nums[i];
+                nums[i]=nums[k];
+                nums[k]=temp;
+
+                k++;
             }
         }
         
