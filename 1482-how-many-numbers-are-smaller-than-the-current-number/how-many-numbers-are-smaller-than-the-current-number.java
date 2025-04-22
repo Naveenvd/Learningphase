@@ -1,5 +1,10 @@
-class Solution {
-    public int[] smallerNumbersThanCurrent(int[] nums) 
+class Solution 
+{
+     static{
+        for(int i=0; i<100; i++)
+        smallerNumbersThanCurrent(new int[2]);
+    }
+    public static int[] smallerNumbersThanCurrent(int[] nums) 
     {
         int[] arr=new int[nums.length];
         for(int i=0;i<nums.length;i++)
