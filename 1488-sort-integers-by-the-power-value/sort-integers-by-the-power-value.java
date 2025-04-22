@@ -26,7 +26,6 @@ class Solution {
             if(ind==arr.length) break;
         }
 
-        System.out.println(Arrays.toString(arr));
         return arr[k-1];
         
     }
