@@ -1,12 +1,11 @@
 class Solution {
     public int[] findMissingAndRepeatedValues(int[][] grid) 
     {
-
         int actual=0;
         int n=grid.length;
         for(int i=0;i<=n*n;i++)
         {
-                actual+=i;
+            actual+=i;
         }
         Set<Integer> set=new HashSet<>();
         int sum=0;
@@ -24,7 +23,7 @@ class Solution {
         {
             if(entry.getValue()>1)
             {
-                 rep=entry.getKey();
+                rep=entry.getKey();
             }
         }
         for(int i:set)
@@ -33,12 +32,6 @@ class Solution {
         }
         int miss=actual-sum;
 
-        return new int[]{rep,miss};
-
-        
-        
-
-        
-        
+        return new int[]{rep,miss};   
     }
 }
