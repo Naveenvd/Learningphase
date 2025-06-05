@@ -1,18 +1,18 @@
-class Solution {
-    public void moveZeroes(int[] nums) 
+class Solution 
+{
+    public void moveZeroes(int[] arr) 
     {
-        int k=0;
-        for(int i=0;i<nums.length;i++)
+        int l=0;
+        for(int i=0;i<arr.length;i++)
         {
-            if(nums[i]!=0)
+            if(arr[i]!=0)
             {
-                int temp=nums[i];
-                nums[i]=nums[k];
-                nums[k]=temp;
-
-                k++;
+                int temp=arr[l];
+                arr[l]=arr[i];
+                arr[i]=temp;
+                l++;
             }
+            
         }
-        
     }
 }
