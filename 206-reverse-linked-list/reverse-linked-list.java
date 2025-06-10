@@ -16,10 +16,10 @@ class Solution
         ListNode prev=null;
         while(ptr!=null)
         {
-            ListNode temp=ptr.next;
+            ListNode post=ptr.next;
             ptr.next=prev;
             prev=ptr;
-            ptr=temp;
+            ptr=post;
         }
        return prev;
         
