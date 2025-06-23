@@ -4,8 +4,14 @@ class Solution {
         Stack<Character> st=new Stack<>();
        for(char ch:s.toCharArray())
        {
-            if(st.isEmpty()) st.push(ch);
-            else if(ch == st.peek()) st.push(ch);
+            if(st.isEmpty())
+            {
+               st.push(ch); 
+            } 
+            else if(ch == st.peek()) 
+            {
+                st.push(ch);
+            }
            else if(Character.isUpperCase(ch) && ch == Character.toUpperCase(st.peek())
             || Character.isUpperCase(st.peek()) && st.peek() ==Character.toUpperCase(ch))
            {
