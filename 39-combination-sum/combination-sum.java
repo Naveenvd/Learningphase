@@ -6,7 +6,7 @@ class Solution {
         csum(candidates,0,target,list,ans);
         return ans;
     }
-    public static void csum(int[] arr,int ind,int k,ArrayList<Integer> list,List<List<Integer>> ans)
+public static void csum(int[] arr,int ind,int k,ArrayList<Integer> list,List<List<Integer>> ans)
     {
         if(ind>=arr.length || k<0)
         {
@@ -16,9 +16,13 @@ class Solution {
             }
             return ;
         }
-        list.add(arr[ind]);
-        csum(arr,ind,k-arr[ind],list,ans);
-        list.remove(list.size()-1);
+        if(arr[ind]<=k)
+        {
+             list.add(arr[ind]);
+            csum(arr,ind,k-arr[ind],list,ans);
+            list.remove(list.size()-1);
+        }
+       
         csum(arr,ind+1,k,list,ans);
        
     }
